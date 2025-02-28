@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Main /> should render the heading 1`] = `
+<main
+  class="bg-[#06092b] text-white w-full h-full p-12 text-center flex flex-col items-center"
+>
+  <h1
+    class="text-[2.5rem] font-bold"
+  >
+    React Avançado
+  </h1>
+  <p
+    class="text-[2rem] font-normal"
+  >
+    TypeScript, ReactJS, NextJS e Tailwind
+  </p>
+</main>
+`;
