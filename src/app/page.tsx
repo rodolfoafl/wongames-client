@@ -1,5 +1,9 @@
-import Main from '@/components/main'
+import Logo from '@/components/logo'
 
 export default function HomePage() {
-  return <Main />
+  return (
+    <>
+      <Logo />
+    </>
+  )
 }

@@ -1,14 +1,27 @@
 @import 'tailwindcss';
 
 @theme {
+  --color-primary: #F231A5;
+  --color-secondary: #3CD3C1;
+  --color-main-bg: #06092B;
+  --color-white: #FAFAFA;
+  --color-black: #030517;
+  --color-light-gray: #EAEAEA;
+  --color-gray: #8F8F8F;
+  --color-dark-gray: #2E2F42;
 }
 
-html {
-  font-size: 62.5%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   font-family:
+    Poppins,
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
