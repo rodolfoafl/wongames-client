@@ -22,6 +22,16 @@ export default function (plop) {
       },
       {
         type: 'add',
+        path: '../src/components/{{lowerCase name}}/types.d.ts',
+        templateFile: 'templates/types.ts.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/components/{{lowerCase name}}/variants.ts',
+        templateFile: 'templates/variants.ts.hbs'
+      },
+      {
+        type: 'add',
         path: '../src/components/{{lowerCase name}}/test.tsx',
         templateFile: 'templates/test.tsx.hbs'
       }

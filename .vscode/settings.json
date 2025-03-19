@@ -5,4 +5,7 @@
     "source.fixAll.eslint": "explicit"
   },
   "tailwindCSS.rootFontSize": 16,
+  "tailwindCSS.experimental.classRegex": [
+    ["([\"'`][^\"'`]*.*?[\"'`])", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ]
 }

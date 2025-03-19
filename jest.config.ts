@@ -18,6 +18,7 @@ const config: Config = {
     '!src/types/**',
     '!src/**/*.d.ts',
     '!src/**/stories.tsx',
+    '!src/**/variants.ts',
     '!src/utils/**'
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
