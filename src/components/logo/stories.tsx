@@ -6,7 +6,7 @@ export default {
   title: 'Logo',
   component: Logo,
   args: {
-    color: 'white',
+    color: 'black',
     size: 'normal',
     hideOnMobile: false
   },

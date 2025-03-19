@@ -23,7 +23,7 @@ describe('<Logo />', () => {
     render(<Logo />)
 
     expect(screen.getByLabelText(/Won Games/i).parentElement).toHaveClass(
-      'w-[110px]'
+      'w-[6.875rem]'
     )
   })
 
@@ -31,7 +31,7 @@ describe('<Logo />', () => {
     render(<Logo size="large" />)
 
     expect(screen.getByLabelText(/Won Games/i).parentElement).toHaveClass(
-      'w-[200px]'
+      'w-[12.5rem]'
     )
   })
 
@@ -39,7 +39,7 @@ describe('<Logo />', () => {
     render(<Logo hideOnMobile />)
 
     expect(screen.getByLabelText(/Won Games/i).parentElement).toHaveClass(
-      'w-[58px]'
+      'w-[3.625rem]'
     )
   })
 })
