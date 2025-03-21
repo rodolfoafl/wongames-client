@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LinkButton /> should render the medium size link button by default 1`] = `
+<a
+  class="flex items-center justify-center rounded-sm border-none bg-[linear-gradient(180deg,#FF5F5F_0%,#F062C0_100%)] w-fit cursor-pointer p-2 font-semibold text-white hover:bg-[linear-gradient(180deg,#E35565_0%,#D958A6_100%)] h-10 px-4 text-sm"
+  href="/"
+>
+  Buy Now
+</a>
+`;
