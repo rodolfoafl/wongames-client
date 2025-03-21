@@ -8,8 +8,10 @@ export default {
   args: {
     children: 'Most Popular',
     color: 'black',
+    size: 'medium',
     lineLeft: false,
-    lineBottom: false
+    lineBottom: false,
+    lineBottomColor: 'primary'
   },
   argTypes: {
     children: {
@@ -19,11 +21,19 @@ export default {
       options: ['white', 'black'],
       control: { type: 'radio' }
     },
+    size: {
+      options: ['small', 'medium'],
+      control: { type: 'radio' }
+    },
     lineLeft: {
       control: { type: 'boolean' }
     },
     lineBottom: {
       control: { type: 'boolean' }
+    },
+    lineBottomColor: {
+      options: ['primary', 'secondary'],
+      control: { type: 'radio' }
     }
   }
 } as Meta

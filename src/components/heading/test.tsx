@@ -31,7 +31,31 @@ describe('<Heading />', () => {
     render(<Heading lineBottom>Won Games</Heading>)
 
     expect(screen.getByRole('heading', { name: /won games/i })).toHaveClass(
-      'after:border-primary relative pb-2 after:absolute after:-bottom-2 after:left-0 after:w-[3.75rem] after:border-b-4'
+      'after:border-primary relative pb-1 after:absolute after:-bottom-1 after:left-0 after:w-[3.75rem] after:border-b-4'
+    )
+  })
+
+  it('should render a heading with a small size and with a line at the bottom', () => {
+    render(
+      <Heading size="small" lineBottom>
+        Won Games
+      </Heading>
+    )
+
+    expect(screen.getByRole('heading', { name: /won games/i })).toHaveClass(
+      'text-base after:w-[1.875rem]'
+    )
+  })
+
+  it('should render a heading with a line at the bottom with the secondary color', () => {
+    render(
+      <Heading lineBottom lineBottomColor="secondary">
+        Won Games
+      </Heading>
+    )
+
+    expect(screen.getByRole('heading', { name: /won games/i })).toHaveClass(
+      'after:border-secondary'
     )
   })
 })
