@@ -9,6 +9,18 @@
   --color-light-gray: #EAEAEA;
   --color-gray: #8F8F8F;
   --color-dark-gray: #2E2F42;
+
+  --animate-hover-animation: hoverAnimation 0.5s forwards;
+  @keyframes hoverAnimation {
+    0% {
+      width: 0;
+      left: 50%;
+    }
+    100% {
+      width: 100%;
+      left: 0;
+    }
+  }
 }
 
 * {
