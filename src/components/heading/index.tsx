@@ -1,5 +1,6 @@
 import { HeadingProps } from '@/components/heading/types'
 import { h2 } from '@/components/heading/variants'
+import { cn } from '@/utils'
 
 export default function Heading({
   children,
@@ -7,10 +8,16 @@ export default function Heading({
   size = 'medium',
   lineLeft = false,
   lineBottom = false,
-  lineBottomColor = 'primary'
+  lineBottomColor = 'primary',
+  className
 }: HeadingProps) {
   return (
-    <h2 className={h2({ color, size, lineLeft, lineBottom, lineBottomColor })}>
+    <h2
+      className={cn(
+        h2({ color, size, lineLeft, lineBottom, lineBottomColor }),
+        className
+      )}
+    >
       {children}
     </h2>
   )

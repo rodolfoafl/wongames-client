@@ -5,4 +5,5 @@ export type HeadingProps = {
   lineLeft?: boolean
   lineBottom?: boolean
   lineBottomColor?: 'primary' | 'secondary'
+  className?: string
 }
