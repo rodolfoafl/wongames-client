@@ -38,4 +38,20 @@ describe('<Banner />', () => {
     const button = screen.getByRole('button', { name: /buy now/i })
     expect(button).toBeInTheDocument()
   })
+
+  it('should render the banner with a ribbon', () => {
+    render(
+      <Banner
+        {...props}
+        ribbon="Ribbon"
+        ribbonSize="small"
+        ribbonColor="secondary"
+      />
+    )
+
+    const ribbon = screen.getByText(/ribbon/i)
+    expect(ribbon).toBeInTheDocument()
+    expect(ribbon).toHaveClass('bg-secondary')
+    expect(ribbon).toHaveClass('h-[1.625rem] text-xs')
+  })
 })

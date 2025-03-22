@@ -1,4 +1,5 @@
 import { BannerProps } from '@/components/banner/types'
+import Ribbon from '@/components/ribbon'
 import { cn } from '@/utils'
 import Image from 'next/image'
 
@@ -6,10 +7,19 @@ export default function Banner({
   image,
   title,
   subtitle,
-  children
+  children,
+  ribbon,
+  ribbonSize,
+  ribbonColor
 }: BannerProps) {
   return (
     <div className="relative md:shadow-md">
+      {!!ribbon && (
+        <Ribbon size={ribbonSize} color={ribbonColor}>
+          {ribbon}
+        </Ribbon>
+      )}
+
       <Image
         src={image}
         alt={title}

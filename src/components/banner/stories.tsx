@@ -22,4 +22,33 @@ export default {
   }
 } as Meta
 
-export const Default: StoryObj<BannerProps> = {}
+export const Default: StoryObj<BannerProps> = {
+  render: (args) => (
+    <div className="mx-auto max-w-[65rem]">
+      <Banner {...args} />
+    </div>
+  )
+}
+
+export const WithRibbon: StoryObj<BannerProps> = {
+  args: {
+    ribbon: 'Ribbon',
+    ribbonSize: 'small',
+    ribbonColor: 'secondary'
+  },
+  argTypes: {
+    ribbonSize: {
+      options: ['small', 'normal'],
+      control: { type: 'radio' }
+    },
+    ribbonColor: {
+      options: ['primary', 'secondary'],
+      control: { type: 'radio' }
+    }
+  },
+  render: (args) => (
+    <div className="mx-auto max-w-[65rem]">
+      <Banner {...args} />
+    </div>
+  )
+}
