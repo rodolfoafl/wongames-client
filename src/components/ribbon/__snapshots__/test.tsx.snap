@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Ribbon /> should render the children 1`] = `
+<div
+  class="absolute top-4 flex items-center font-bold text-white before:absolute before:right-0 before:border before:border-b-[0.625rem] before:border-l-0 before:border-r-transparent before:border-b-transparent before:brightness-75 bg-primary before:border-l-primary before:border-t-primary -right-5 h-9 px-6 py-0 text-sm before:top-9 before:border-t-[0.625rem] before:border-r-[1.25rem]"
+>
+  Best Seller
+</div>
+`;
