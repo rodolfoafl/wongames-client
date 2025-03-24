@@ -37,7 +37,7 @@ export default function Banner({
       >
         <h2
           dangerouslySetInnerHTML={{ __html: title }}
-          className="text-lg leading-none font-bold text-white md:text-[2.8rem]"
+          className="text-lg leading-none font-bold text-white md:text-[1.75rem]"
         />
         <p
           dangerouslySetInnerHTML={{ __html: subtitle }}
@@ -46,7 +46,7 @@ export default function Banner({
             'md:text-lg'
           )}
         />
-        <div className="mt-4">{!!children && children}</div>
+        {!!children && <div className="mt-4">{children}</div>}
       </div>
     </div>
   )

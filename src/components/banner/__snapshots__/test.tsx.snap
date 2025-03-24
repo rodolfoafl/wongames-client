@@ -22,7 +22,7 @@ exports[`<Banner /> should render the banner 1`] = `
     class="flex w-full flex-col gap-y-2 bg-[#000000b3] p-6 md:absolute md:bottom-0 md:left-0 md:rounded-br-sm md:rounded-bl-sm md:p-10"
   >
     <h2
-      class="text-lg leading-none font-bold text-white md:text-[2.8rem]"
+      class="text-lg leading-none font-bold text-white md:text-[1.75rem]"
     >
       Banner Title
     </h2>
@@ -31,9 +31,6 @@ exports[`<Banner /> should render the banner 1`] = `
     >
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, cum!
     </p>
-    <div
-      class="mt-4"
-    />
   </div>
 </div>
 `;
