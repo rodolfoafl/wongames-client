@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Highlight /> should render the cover image, title and subtitle 1`] = `
+<section
+  class="relative grid h-[14.375rem] grid-cols-1 after:absolute after:h-full after:w-full after:bg-[#00000099] md:h-80"
+>
+  <img
+    alt="Heading 1"
+    aria-label="Heading 1"
+    class="absolute inset-0 h-[14.375rem] w-full object-cover object-center md:h-80"
+    data-nimg="1"
+    decoding="async"
+    height="320"
+    loading="lazy"
+    src="/_next/image?url=%2Fimg%2Fred-dead-img.jpg&w=3840&q=75"
+    srcset="/_next/image?url=%2Fimg%2Fred-dead-img.jpg&w=1080&q=75 1x, /_next/image?url=%2Fimg%2Fred-dead-img.jpg&w=3840&q=75 2x"
+    style="color: transparent;"
+    title="Cover Image"
+    width="1040"
+  />
+  <div
+    class="z-10 flex flex-col gap-y-2 p-4 md:self-end md:p-10 order-2 items-end text-right"
+  >
+    <h2
+      class="text-lg leading-none font-semibold text-white md:text-[1.75rem]"
+    >
+      Heading 1
+    </h2>
+    <h3
+      class="text-sm leading-none font-light text-white md:text-lg"
+    >
+      Heading 2
+    </h3>
+    <div
+      class="mt-8"
+    >
+      <a
+        class="flex items-center justify-center rounded-sm border-none bg-[linear-gradient(180deg,#FF5F5F_0%,#F062C0_100%)] w-fit cursor-pointer p-2 font-semibold text-white hover:bg-[linear-gradient(180deg,#E35565_0%,#D958A6_100%)] h-10 px-4 text-sm"
+        href="/link"
+      >
+        Buy now
+      </a>
+    </div>
+  </div>
+</section>
+`;
