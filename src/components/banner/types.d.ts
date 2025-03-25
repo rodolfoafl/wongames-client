@@ -1,3 +1,5 @@
+import { RibbonProps } from '@/components/ribbon/types'
+
 export type BannerProps = {
   image: string
   title: string
