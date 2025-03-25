@@ -13,7 +13,7 @@ export default function Banner({
   ribbonColor
 }: BannerProps) {
   return (
-    <div className="relative md:shadow-md">
+    <div className="relative md:mx-auto md:max-w-[65rem] md:shadow-md">
       {!!ribbon && (
         <Ribbon size={ribbonSize} color={ribbonColor}>
           {ribbon}

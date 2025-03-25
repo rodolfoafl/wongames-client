@@ -2,7 +2,7 @@
 
 exports[`<Banner /> should render the banner 1`] = `
 <div
-  class="relative md:shadow-md"
+  class="relative md:mx-auto md:max-w-[65rem] md:shadow-md"
 >
   <img
     alt="Banner Title"
