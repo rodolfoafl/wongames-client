@@ -1,8 +1,3 @@
-type RibbonProps = {
-  size?: 'normal' | 'small'
-  color?: 'primary' | 'secondary'
-}
-
 export type BannerProps = {
   image: string
   title: string
