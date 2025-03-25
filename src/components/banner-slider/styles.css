@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+.slick-dots {
+  list-style: none;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+
+  li {
+    background: var(--color-white);
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem;
+    cursor: pointer;
+
+    &.slick-active {
+      background: var(--color-primary);
+    }
+  }
+
+  button {
+    opacity: 0;
+    width: 0.75rem;
+    height: 0.75rem;
+    cursor: pointer;
+  }
+}
+
+@media(min-width: 1280px) {
+  .slick-dots {
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    height: 100%;
+    top: 0;
+    margin: 0;
+
+    li {
+      margin: 0.5rem 0;
+    }
+  }
+}
