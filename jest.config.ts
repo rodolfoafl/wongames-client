@@ -24,7 +24,7 @@ const config: Config = {
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-  // modulePaths: ['<rootDir>/src/*'],
+  modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],
   roots: ['<rootDir>'],
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': [
